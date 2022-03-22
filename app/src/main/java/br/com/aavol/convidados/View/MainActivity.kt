@@ -6,7 +6,7 @@ import br.com.fourvrstudios.convidados.R
 
 /*
 Aprimoramentos do Aluno
-Aprimora
+Aprimoramento 1 → Ordenar a lista de convidados (aprimorar query de listar convidados em ordem alfabética)
  */
 
 class MainActivity : AppCompatActivity() {

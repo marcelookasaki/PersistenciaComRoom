@@ -24,11 +24,10 @@ interface ConvidadoDAO {
     suspend fun buscarConvidado(search: String) : Convidado?
 
     //Query busca toodos os usuários
-    @Query("SELECT * FROM convidado_data_table")
+    @Query("SELECT * FROM convidado_data_table ORDER BY convidado_name ASC")
     fun listarConvidados(): LiveData<List<Convidado>>
 
-    // ************* OUTROS EXEMPLOS DE QUERYS *******************/
-/*
+    /* ************* OUTROS EXEMPLOS DE QUERYS ******************* //
     @Query("SELECT * FROM convidado_data_table ORDER BY _id DESC")
     fun listarConvidadosDesc(): LiveData<List<Convidado>>
 
